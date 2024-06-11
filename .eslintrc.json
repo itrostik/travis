@@ -1,0 +1,10 @@
+{
+  "extends": "next/core-web-vitals",
+  "plugins": ["unused-imports"],
+  "rules": {
+    "unused-imports/no-unused-imports": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "react/no-array-index-key": "warn",
+    "react/jsx-no-undef": "off"
+  }
+}

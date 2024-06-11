@@ -1,0 +1,42 @@
+.header {
+  padding: 10px 5px;
+  border-bottom: 1px solid var(--gray);
+  position: relative;
+}
+
+.overlay {
+  transition: left 0.3s ease-in-out;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: var(--background);
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.transform {
+  left: 40px;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include hover {
+    background-color: var(--hover);
+  }
+}
+
+.active {
+  background: var(--dark-travis);
+  color: #ffffff;
+  @include hover {
+    background: var(--dark-travis);
+  }
+}

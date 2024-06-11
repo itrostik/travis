@@ -1,0 +1,23 @@
+.check {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 37px;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: white; // не баг
+}
+
+.busy {
+  background: var(--busy);
+  display: flex;
+}
+
+.free {
+  background: var(--free);
+  display: flex;
+}

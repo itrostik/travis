@@ -1,0 +1,27 @@
+{
+  "printWidth": 88,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^react",
+    "^classnames/*",
+    "(?=./component.module.scss)",
+    "(?=./page.module.scss)",
+    "^../(.*)$",
+    "^./_styles",
+    "^./_providers",
+    "<THIRD_PARTY_MODULES>",
+    "^lucide-react",
+    "^@/2.pages$",
+    "^@/3.widgets$",
+    "^@/4.features$",
+    "^@/5.entities$",
+    "^@/6.shared$"
+  ],
+  "importOrderSeparation": true
+}

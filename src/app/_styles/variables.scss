@@ -1,0 +1,51 @@
+:root {
+  --background: #fff;
+  --travis: #3886e4;
+  --dark-travis: #2779dc;
+  --logo: #000;
+  --hover: #dadada;
+  --hover-alpha: rgba(0, 0, 0, 0.1);
+  --color: #000000;
+  --overlay: rgba(0, 0, 0, 0.3);
+  --gray: #929292;
+  --busy: #ff3232;
+  --free: #48ba46;
+  --background-skeleton: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.08),
+    transparent
+  );
+  --border-skeleton: 1px solid rgb(0, 0, 0, 0.08);
+  --message: #ebebeb;
+  --switch-background: #e4e4e4;
+  --switch-circle: #fff;
+  --popup: rgba(256, 256, 256, 0.7);
+  --shadow: rgba(114, 114, 114, 0.251);
+}
+
+[data-theme="dark"] {
+  --background: #1a1a1c;
+  --travis: #3886e4;
+  --dark-travis: #2779dc;
+  --logo: #fff;
+  --hover: #000000;
+  --hover-alpha: rgba(255, 255, 255, 0.1);
+  --color: #ffffff;
+  --overlay: rgba(255, 255, 255, 0.3);
+  --gray: #929292;
+  --busy: #ff3232;
+  --free: #48ba46;
+  --background-skeleton: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  --border-skeleton: 1px solid rgba(255, 255, 255, 0.08);
+  --message: #000;
+  --switch-background: #000000;
+  --switch-circle: #2f2f32;
+  --popup: rgba(0, 0, 0, 0.7);
+  --shadow: rgba(16, 16, 16, 0.612);
+}

@@ -1,0 +1,104 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.right {
+  flex: 1;
+  position: relative;
+}
+.block {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  &__active {
+    right: 0;
+  }
+}
+.mini {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 400px;
+  border-left: 1px solid var(--gray);
+  height: 100%;
+  transition: right 0.3s;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  &__active {
+    right: 0;
+  }
+}
+
+.list {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.chat {
+  flex: 1 1 auto;
+}
+
+.settings {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+  overflow: hidden;
+  &__active {
+    left: 0;
+  }
+}
+.stub {
+  width: 0;
+  height: 100%;
+  transition: width 0.3s;
+  &__active {
+    width: 400px;
+  }
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include hover {
+    background-color: var(--hover);
+  }
+}

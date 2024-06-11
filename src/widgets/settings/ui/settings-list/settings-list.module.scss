@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+  gap: 5px;
+  overflow-y: auto;
+}
+
+.item {
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  color: var(--color);
+  @include hover {
+    background-color: var(--hover);
+  }
+}
+.block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  color: var(--color);
+}
+
+.lucide {
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+.arrow {
+  color: #929292;
+}
+.switch {
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: var(--switch-background);
+  position: relative;
+  cursor: pointer;
+}
+.circle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--background);
+  transition: left 0.3s ease;
+}
+.selected {
+  left: 22px;
+  background-color: var(--travis);
+}
+.active {
+  background: var(--travis) !important;
+  .lucide {
+    background: #ffffff;
+    color: #000000;
+  }
+  .title {
+    color: white;
+  }
+  .arrow {
+    color: var(--travis);
+  }
+}
+.title {
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+}
+
+.profile {
+  background: #fe2c55;
+}
+
+.language {
+  background: #cf75e5;
+}
+.theme {
+  background: #ff9502;
+}
+
+.last {
+  flex: 1 1 100%;
+}

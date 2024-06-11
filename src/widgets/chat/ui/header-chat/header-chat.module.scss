@@ -1,0 +1,23 @@
+.wrapper {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #929292;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 600;
+}

@@ -1,0 +1,10 @@
+.resize {
+  height: 100%;
+  width: 2px;
+  background-color: var(--gray);
+  cursor: ew-resize;
+  box-sizing: content-box;
+  @include hover {
+    background-color: var(--color);
+  }
+}

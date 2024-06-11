@@ -1,0 +1,29 @@
+.image {
+  border-radius: 50%;
+}
+
+.block {
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.done {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--travis);
+  margin: 0 auto;
+
+  @include hover {
+    background-color: var(--dark-travis);
+  }
+}

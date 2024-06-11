@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+
+  div {
+    position: relative;
+    overflow: hidden;
+    border: var(--border-skeleton);
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: var(--background-skeleton);
+      transform: translateX(-100%);
+      content: "";
+      animation: 2s linear 0.5s infinite normal none running shim;
+    }
+  }
+}
+
+@keyframes shim {
+  100% {
+    transform: translateX(100%);
+  }
+}

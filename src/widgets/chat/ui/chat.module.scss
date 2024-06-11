@@ -1,0 +1,27 @@
+.wrapper {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  position: relative;
+  max-width: 800px;
+  height: 100%;
+  padding: 0 10px 0 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  flex: 1;
+}

@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  &:hover {
+    background: var(--hover-alpha);
+  }
+}
+
+.title {
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+  color: var(--color);
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: var(--dark-travis);
+  border-radius: 5px;
+}
